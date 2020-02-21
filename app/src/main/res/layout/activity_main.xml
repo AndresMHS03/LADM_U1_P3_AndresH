@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25sp"
+        android:layout_marginTop="35sp"
+        android:text="Valor:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25sp"
+        android:layout_marginTop="15sp"
+        android:text="Posición en vector (0..9):"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/posicion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15sp">
+
+        <Button
+            android:id="@+id/asignar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1"
+            android:text="Asignar"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/mostrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:text="Mostrar Todos"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/enPantalla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:ems="10"
+        android:enabled="false"
+        android:focusableInTouchMode="false"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/nombreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:ems="10"
+        android:hint="Escriba aquí nombre de archivo"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20sp"
+        android:padding="15sp"
+        android:text="Guardar en memoria SD" />
+
+    <EditText
+        android:id="@+id/nombrel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Escriba aquí nombre de archivo"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/leer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Leer de memoria SD" />
+
+</LinearLayout>
